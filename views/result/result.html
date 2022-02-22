@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="stylesheet" href="../result/result.css">
+
+    <title>JSMonk Quizz website - Result</title>
+    <script src="../../js/index.js" defer></script>
+    <script src="../result/result.js" defer></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- Header  -->
+        <div class="header mb-5">
+            <div class="header-logo-wrapper px-5 py-2">
+                <div class="logo">
+                    <span class="logo-title">jsmonk-quizz</span>
+                    <span class="logo-subtitle">Best quiz website</span>
+                </div>
+            </div>
+            <div class="header-menu-wrapper">
+                <div class="center-menus"></div>
+                <div class="right-menus">
+                    <a class="menu-icon" href="/index.html"><i class="bi bi-house-door"></i>Home</a>
+                    <a class="menu-icon" href="#"><i class="bi bi-door-open"></i></i>Login</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Questions -->
+        <div class="page">
+            <section class="content">
+                <div class="title-wrapper">
+                    <h3>Your score is 30/50
+                    </h3>
+                </div>
+                <div class="category-wrapper my-5">
+                    <h4>Review your answers below:</h4>
+                </div>
+                <div class="category-wrapper mb-5">
+                    <div class="que-wrapper">
+                        <div class="que-title" onclick="toggleAnswer('q1-status')">
+                            1. Kazakhstan is a part of which of the following continental confederations recognized by
+                            FIFA?
+                        </div>
+                        <div class="que-status" id="q1-status">
+                            <ul class="rule-wrapper">
+                                <li class="rule"><span><i class="bi bi-x-circle"></i></span>Asian
+                                    Football Confederation</li>
+                                <li class="rule"><span><i class="bi bi-x-circle"></i></span>Confederation
+                                    Africaine de Football</li>
+                                <li class="rule que-ans"><span><i class="bi bi-check-circle"></i></span>Union of
+                                    European Football Associations</li>
+                                <li class="rule"><span><i class="bi bi-x-circle"></i></span>None of them
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-wrapper mb-5">
+                    <div class="que-wrapper">
+                        <div class="que-title" onclick="toggleAnswer('q2-status')">
+                            2. Who among the following have contributed to the Olympic theme music?
+                        </div>
+                        <div class="que-status" id="q2-status">
+                            <ul class="rule-wrapper">
+                                <li class="rule"><span><i class="bi bi-x-circle"></i></span>Mark Watters</li>
+                                <li class="rule"><span><i class="bi bi-x-circle"></i></span>John Williams</li>
+                                <li class="rule que-ans"><span><i class="bi bi-check-circle"></i></span>Henry Mancini
+                                </li>
+                                <li class="rule"><span><i class="bi bi-x-circle"></i></span>All of the above
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-wrapper mb-5">
+                    <div class="que-wrapper">
+                        <div class="que-title" onclick="toggleAnswer('q3-status')">
+                            3. Where were the UCI Track Cycling World Championships first held?
+                        </div>
+                        <div class="que-status" id="q3-status">
+                            <ul class="rule-wrapper">
+                                <li class="rule"><span><i class="bi bi-x-circle"></i></span>Chicago</li>
+                                <li class="rule"><span><i class="bi bi-x-circle"></i></span>New York</li>
+                                <li class="rule que-ans"><span><i class="bi bi-check-circle"></i></span>California</li>
+                                <li class="rule"><span><i class="bi bi-x-circle"></i></span>Florida
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-wrapper mb-5">
+                    <div class="que-wrapper">
+                        <div class="que-title" onclick="toggleAnswer('q4-status')">
+                            4. Who was the first winner of UCI Cyclo-cross World Cup championships?
+                        </div>
+                        <div class="que-status" id="q4-status">
+                            <ul class="rule-wrapper">
+                                <li class="rule"><span><i class="bi bi-x-circle"></i></span>Sven Nys</li>
+                                <li class="rule"><span><i class="bi bi-x-circle"></i></span>Paul Herygers</li>
+                                <li class="rule que-ans"><span><i class="bi bi-check-circle"></i></span>Mathieu Poel
+                                </li>
+                                <li class="rule"><span><i class="bi bi-x-circle"></i></span>None of them
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-wrapper mb-5">
+                    <div class="que-wrapper">
+                        <div class="que-title" onclick="toggleAnswer('q5-status')">
+                            5. Which nation topped the medal tally in the IAAF World Indoor Championships 2018?
+                        </div>
+                        <div class="que-status" id="q5-status">
+                            <ul class="rule-wrapper">
+                                <li class="rule"><span><i class="bi bi-x-circle"></i></span>China</li>
+                                <li class="rule"><span><i class="bi bi-x-circle"></i></span>US</li>
+                                <li class="rule que-ans"><span><i class="bi bi-check-circle"></i></span>Russia</li>
+                                <li class="rule"><span><i class="bi bi-x-circle"></i></span>Jamaica
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

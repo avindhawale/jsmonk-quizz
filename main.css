@@ -87,3 +87,9 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  overflow: hidden;
+}
+.header-menu-wrapper .right-menus .menu-icon {
+  color: var(--black);
+}

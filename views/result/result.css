@@ -1,0 +1,47 @@
+/* local variable */
+:root {
+  /* banner */
+  --main-content-width: 750px;
+}
+
+.rule.que-ans {
+  /* background-color: rgb(94, 224, 100); */
+  background-color: var(--success);
+}
+.que-wrapper {
+  border: 1px solid var(--black);
+  border-radius: 0.25rem;
+}
+.que-title {
+  border-bottom: 1px solid;
+  padding: 1rem;
+  cursor: pointer;
+}
+.que-title:hover {
+  background-color: rgba(100, 78, 2, 0.3);
+}
+.que-status {
+  display: none;
+  height: 0px;
+}
+.show {
+  display: block;
+  padding: 1rem;
+  height: auto;
+}
+.main-container {
+  height: 100%;
+  overflow: auto;
+}
+.main-container .page {
+  width: var(--main-content-width);
+  margin: 0 auto;
+}
+.main-container .page .content {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins-Regular";
+}
+body {
+  background: var(--bg);
+}
