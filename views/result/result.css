@@ -5,12 +5,12 @@
 }
 
 .rule.que-ans {
-  /* background-color: rgb(94, 224, 100); */
   background-color: var(--success);
 }
 .que-wrapper {
   border: 1px solid var(--black);
   border-radius: 0.25rem;
+  flex-basis: 100%;
 }
 .que-title {
   border-bottom: 1px solid;

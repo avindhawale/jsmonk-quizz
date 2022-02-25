@@ -12,3 +12,18 @@ body {
 .category-wrapper .rule-wrapper li input:hover {
   cursor: pointer;
 }
+.timer-wrapper {
+  width: 75px;
+  height: 75px;
+}
+.rule-btn-wrapper .rule-btn {
+  margin-bottom: 0;
+  background: transparent;
+}
+.main-container .header {
+  position: fixed;
+}
+.main-container .page {
+  position: relative;
+  top: 120px;
+}

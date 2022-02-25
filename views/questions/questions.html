@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <link rel="stylesheet" href="../../main.css">
     <link rel="stylesheet" href="../questions/questions.css">
+    <link rel="stylesheet" href="../utils/timer/timer.css">
 
     <title>JSMonk Quizz website - Questions</title>
-    <script src="../../js/index.js"></script>
+    <script src="../../js/index.js" defer></script>
+    <script src="../utils/timer/timer.js" defer></script>
+    <script src="../questions/questions.js" defer></script>
 </head>
 
 <body>
@@ -21,6 +24,15 @@
                 <div class="logo">
                     <span class="logo-title">jsmonk-quizz</span>
                     <span class="logo-subtitle">Best quiz website</span>
+                </div>
+            </div>
+            <div class="header-menu-wrapper">
+                <div class="center-menus"></div>
+                <div class="right-menus">
+                    <div class="timer-wrapper">
+                        <div id="timer"></div>
+                    </div>
+                    <a class="menu-icon" href="/index.html"><i class="bi bi-house-door"></i>Home</a>
                 </div>
             </div>
         </div>
@@ -45,22 +57,13 @@
                 </div>
                 <div class="category-wrapper my-5">
                     <ul class="rule-wrapper rule-btn-wrapper">
-                        <li class=""><a href="#question2" class="rule rule-btn">Submit</a></li>
+                        <li class=""><button id="question2" class="rule rule-btn" onclick="onTimesUp()">Submit</a></li>
                     </ul>
                 </div>
             </section>
         </div>
     </div>
     <div id="question2" class="main-container">
-        <!-- Header  -->
-        <div class="header mb-5">
-            <div class="header-logo-wrapper px-5 py-2">
-                <div class="logo">
-                    <span class="logo-title">jsmonk-quizz</span>
-                    <span class="logo-subtitle">Best quiz website</span>
-                </div>
-            </div>
-        </div>
 
         <div class="page">
             <section class="content">
@@ -79,22 +82,13 @@
                 </div>
                 <div class="category-wrapper my-5">
                     <ul class="rule-wrapper rule-btn-wrapper">
-                        <li class=""><a href="#question3" class="rule rule-btn">Submit</a></li>
+                        <li class=""><button id="question3" class="rule rule-btn" onclick="onTimesUp()">Submit</a></li>
                     </ul>
                 </div>
             </section>
         </div>
     </div>
     <div id="question3" class="main-container">
-        <!-- Header  -->
-        <div class="header mb-5">
-            <div class="header-logo-wrapper px-5 py-2">
-                <div class="logo">
-                    <span class="logo-title">jsmonk-quizz</span>
-                    <span class="logo-subtitle">Best quiz website</span>
-                </div>
-            </div>
-        </div>
 
         <div class="page">
             <section class="content">
@@ -112,23 +106,13 @@
                 </div>
                 <div class="category-wrapper my-5">
                     <ul class="rule-wrapper rule-btn-wrapper">
-                        <li class=""><a href="#question4" class="rule rule-btn">Submit</a></li>
+                        <li class=""><button id="question4" class="rule rule-btn" onclick="onTimesUp()">Submit</a></li>
                     </ul>
                 </div>
             </section>
         </div>
     </div>
     <div id="question4" class="main-container">
-        <!-- Header  -->
-        <div class="header mb-5">
-            <div class="header-logo-wrapper px-5 py-2">
-                <div class="logo">
-                    <span class="logo-title">jsmonk-quizz</span>
-                    <span class="logo-subtitle">Best quiz website</span>
-                </div>
-            </div>
-        </div>
-
         <div class="page">
             <section class="content">
                 <div class="title-wrapper">
@@ -145,22 +129,13 @@
                 </div>
                 <div class="category-wrapper my-5">
                     <ul class="rule-wrapper rule-btn-wrapper">
-                        <li class=""><a href="#question5" class="rule rule-btn">Submit</a></li>
+                        <li class=""><button id="question5" class="rule rule-btn" onclick="onTimesUp()">Submit</a></li>
                     </ul>
                 </div>
             </section>
         </div>
     </div>
     <div id="question5" class="main-container">
-        <!-- Header  -->
-        <div class="header mb-5">
-            <div class="header-logo-wrapper px-5 py-2">
-                <div class="logo">
-                    <span class="logo-title">jsmonk-quizz</span>
-                    <span class="logo-subtitle">Best quiz website</span>
-                </div>
-            </div>
-        </div>
 
         <div class="page">
             <section class="content">
@@ -178,7 +153,9 @@
                 </div>
                 <div class="category-wrapper my-5">
                     <ul class="rule-wrapper rule-btn-wrapper">
-                        <li class=""><a href="../result/result.html" class="rule rule-btn">Submit</a></li>
+                        <li class=""><a href="../result/result.html" class="rule rule-btn"
+                                onclick="onTimesUp()">Submit</a>
+                        </li>
                     </ul>
                 </div>
             </section>
