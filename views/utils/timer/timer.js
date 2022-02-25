@@ -56,8 +56,21 @@ function onTimesUp() {
   incQue();
 }
 
-function startTimer() {
+function resetValues() {
+  //resetting color of circle
+  document
+    .getElementById("base-timer-path-remaining")
+    .classList.add(COLOR_CODES.info.color);
+  document
+    .getElementById("base-timer-path-remaining")
+    .classList.remove(COLOR_CODES.alert.color);
+  //resetting time
   timePassed = 0;
+  remainingPathColor = COLOR_CODES.info.color;
+}
+
+function startTimer() {
+  resetValues();
   timerInterval = setInterval(() => {
     timePassed = timePassed += 1;
     timeLeft = TIME_LIMIT - timePassed;
